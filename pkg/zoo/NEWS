@@ -4,6 +4,10 @@ Changes in Version 1.8-10
     to a data.frame of numeric variables, as used in previous versions). This
     means that the transformations can really operate on full zoo series.
 
+  o Added MATCH() methods for classes "Date", "POSIXct", and "POSIXlt", all
+    of which essentially match the underlying numeric vector (suggested by
+    Kurt Hornik).
+
 
 Changes in Version 1.8-9
 
