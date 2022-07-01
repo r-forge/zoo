@@ -1,3 +1,10 @@
+Changes in Version 1.8-11
+
+  o The as.ts() methods for both "zoo" and "zooreg" objects now pass on the ...
+    arguments to the underlying merge() call. Thus, you can say as.ts(z, fill = 0)
+    to fill potential gaps with 0s instead of NAs.
+
+
 Changes in Version 1.8-10
 
   o The transform() method now internally uses a list of zoo series (as opposed
