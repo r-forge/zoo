@@ -4,6 +4,9 @@ Changes in Version 1.8-11
     arguments to the underlying merge() call. Thus, you can say as.ts(z, fill = 0)
     to fill potential gaps with 0s instead of NAs.
 
+  o The na.spline() method for "ts" objects had been provided internally in the
+    package but has only been correctly registered in the NAMESPACE now.
+
 
 Changes in Version 1.8-10
 
