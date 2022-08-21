@@ -7,6 +7,10 @@ Changes in Version 1.8-11
   o The na.spline() method for "ts" objects had been provided internally in the
     package but has only been correctly registered in the NAMESPACE now.
 
+  o The merge() method gained a sep = "." argument to optionally use a different
+    separator character when making pasting suffixes to column names for making
+    them unique (suggested by Joshua Ulrich).
+
 
 Changes in Version 1.8-10
 
