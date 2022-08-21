@@ -11,6 +11,11 @@ Changes in Version 1.8-11
     separator character when making pasting suffixes to column names for making
     them unique (suggested by Joshua Ulrich).
 
+  o As the "fts" package has been archived on CRAN for several months, it has been
+    excluded from the Suggests of the package. The as.zoo() method for "fts"
+    objects continues to be part of the package, though, just the hyperlinks in
+    the documentation have been removed.
+
 
 Changes in Version 1.8-10
 
