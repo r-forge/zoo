@@ -11,6 +11,10 @@ Changes in Version 1.8-11
     separator character when making pasting suffixes to column names for making
     them unique (suggested by Joshua Ulrich).
 
+  o The MATCH() methods for Date/POSIXct/POSIXlt object now coerce the "table"
+    argument (if necessary) to Date or POSIXct, respectively, before calling
+    match(unclass(x), unclass(table), ...) internally.
+
   o As the "fts" package has been archived on CRAN for several months, it has been
     excluded from the Suggests of the package. The as.zoo() method for "fts"
     objects continues to be part of the package, though, just the hyperlinks in
