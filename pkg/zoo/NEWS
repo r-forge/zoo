@@ -1,3 +1,9 @@
+Changes in Version 1.8-12
+
+  o Support start=NA and end=NA in addition to start=NULL and end=NULL for
+    unspecified start and end time of a window() of a zoo series.
+
+
 Changes in Version 1.8-11
 
   o The as.ts() methods for both "zoo" and "zooreg" objects now allow to pass on
