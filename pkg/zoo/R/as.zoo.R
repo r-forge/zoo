@@ -153,7 +153,9 @@ as.ts.zooreg <- function(x, ...)
   }
   tt <- round.(tt)
   tt2 <- round.(seq(head(tt,1), tail(tt,1), deltat))
-  xx <- merge(zoo(coredata(x), tt), zoo(, tt2), ...)
+  fill <- list(...)$fill
+  if(is.null(fill)) fill <- NA
+  xx <- merge(zoo(coredata(x), tt), zoo(, tt2), fill = fill)
   ts(coredata(xx), start = tt[1], frequency = freq)
 }
 

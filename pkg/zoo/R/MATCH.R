@@ -1,8 +1,18 @@
 MATCH <- function(x, table, nomatch = NA, ...)
   UseMethod("MATCH")
   
-MATCH.default <- function(x, table, nomatch = NA, ...)
+MATCH.default <- function(x, table, nomatch = NA, ...) {
+  if(is.atomic(x) && !is.object(x)) {
+    if(inherits(table, "Date")) {
+      x <- unclass(as.Date(x, origin = "1970-01-01"))
+      table <- unclass(table)
+    } else if(inherits(table, "POSIXt")) {
+      x <- unclass(as.POSIXct(x, origin = "1970-01-01"))
+      table <- unclass(as.POSIXct(table))
+    }
+  }
   match(x, table, nomatch = nomatch, ...)
+}
 
 MATCH.timeDate <- function(x, table, nomatch = NA, ...) {
   match(as.POSIXct(x), as.POSIXct(table), nomatch = nomatch, ...)
