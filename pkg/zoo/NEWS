@@ -1,3 +1,9 @@
+Changes in Version 1.8-13
+
+  o The diff() method for "zoo" objects gained the argument log = FALSE so that
+    diff(x, log = TRUE) can also be used instead of diff(log(x)).
+
+
 Changes in Version 1.8-12
 
   o The autoplot() method for "zoo" objects now uses ggplot() directly rather
