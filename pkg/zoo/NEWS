@@ -3,6 +3,12 @@ Changes in Version 1.8-13
   o The diff() method for "zoo" objects gained the argument log = FALSE so that
     diff(x, log = TRUE) can also be used instead of diff(log(x)).
 
+  o The as.vector() method for "zoo" objects now applies to coredata() directly
+    rather than going through as.matrix(). The latter was used in previous
+    versions setting up unnecessary additional row/column names etc. with
+    unnecessary computational overhead. (Reported by Ethan Smith at
+    https://github.com/joshuaulrich/xts/issues/406)
+
 
 Changes in Version 1.8-12
 
