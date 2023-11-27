@@ -292,7 +292,7 @@ write.zoo <- function(x, file = "", index.name = "Index",
   if(is.null(col.names)) col.names <- !is.null(colnames(x))
   dx <- as.data.frame(x)  
   stopifnot(all(names(dx) != index.name))
-  dx[[index.name]] <- as.character(index(x))
+  dx[[index.name]] <- format(index(x))
   dx <- dx[, c(ncol(dx), 1:(ncol(dx)-1))]
   write.table(dx, file = file, row.names = row.names, col.names = col.names, ...)
 }

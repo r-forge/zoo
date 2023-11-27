@@ -9,6 +9,9 @@ Changes in Version 1.8-13
     unnecessary computational overhead. (Reported by Ethan Smith at
     https://github.com/joshuaulrich/xts/issues/406)
 
+  o In write.zoo() the index() is formatted using format() rather as.character()
+    now (reported in https://stackoverflow.com/questions/77553026).
+
 
 Changes in Version 1.8-12
 
