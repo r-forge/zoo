@@ -1,5 +1,8 @@
 Changes in Version 1.8-13
 
+  o Added a [<- method for "yearmon" and "yearqtr" objects (suggested by
+    Kyle F. Butts).
+
   o The diff() method for "zoo" objects gained the argument log = FALSE so that
     diff(x, log = TRUE) can also be used instead of diff(log(x)).
 

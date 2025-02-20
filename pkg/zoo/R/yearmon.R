@@ -120,6 +120,16 @@ quarters.yearmon <- function(x, abbreviate = FALSE) {
     val
 }
 
+"[<-.yearmon" <- function (x, ..., value) 
+{
+    cl <- oldClass(x)
+    value <- unclass(as.yearmon(value))
+    class(x) <- NULL
+    val <- NextMethod("[")
+    class(val) <- cl
+    val
+}
+
 MATCH.yearmon <- function(x, table, nomatch = NA, ...)
     match(floor(12*as.numeric(x) + .001), floor(12*as.numeric(table) + .001), nomatch = nomatch, ...)
 
