@@ -1,5 +1,8 @@
 Changes in Version 1.8-13
 
+  o New tinyplot() method for "zoo" objects that is similar to the autoplot()
+    method but employs the tinyplot package rather than ggplot2 for drawing.
+
   o Added a [<- method for "yearmon" and "yearqtr" objects (suggested by
     Kyle F. Butts).
 
