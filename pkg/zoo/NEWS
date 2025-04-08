@@ -5,6 +5,11 @@ Changes in Version 1.8-14
     (deprecated since `ggplot2` 3.5.0). The analogous changes are made for
     `scale_y_*` and `yearqtr`. (Patch provided by Jari Karppinen.)
 
+  o Improve example with AM/PM times in `vignette("zoo-read", package = "zoo")`:
+    The `%p` specification for the AM/PM indicator should be combined with `%I`
+    (and not `%H`) for the hours in 01-12 (rather than 00-23). (Reported by
+    Brian D. Ripley.)
+    
 
 Changes in Version 1.8-13
 

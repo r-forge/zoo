@@ -117,7 +117,7 @@ DF
 
 <<ex2b>>=
 z <- read.zoo(DF, FUN = function(x)
-  times(as.chron(paste("1970-01-01", x), format = "%Y-%m-%d %H:%M:%S %p")))
+  times(as.chron(paste("1970-01-01", x), format = "%Y-%m-%d %I:%M:%S %p")))
 z
 @
 
