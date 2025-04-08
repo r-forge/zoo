@@ -10,6 +10,8 @@ Changes in Version 1.8-14
     (and not `%H`) for the hours in 01-12 (rather than 00-23). (Reported by
     Brian D. Ripley.)
     
+  o In the C code use the `isS4()` API rather than `IS_S4_OBJECT()`.
+
 
 Changes in Version 1.8-13
 
