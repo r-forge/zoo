@@ -1,3 +1,10 @@
+Changes in Version 1.8-16
+
+  * When coercing `timeSeries` objects to `zoo` it has long not been necessary
+    to employ `timeSeries::time()` but instead the base `stats::time()` generic
+    can be used (reported by Georgi Boshnakov).
+
+
 Changes in Version 1.8-15
 
   * Documentation fix in BibTeX files requested by CRAN: Use `doi` field rather
