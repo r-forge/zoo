@@ -4,6 +4,9 @@ Changes in Version 1.8-16
     to employ `timeSeries::time()` but instead the base `stats::time()` generic
     can be used (reported by Georgi Boshnakov).
 
+  * The case of `read.zoo(file, index.column = 0)` is handled correctly now if
+    `file` is already a `data.frame`.
+
 
 Changes in Version 1.8-15
 
